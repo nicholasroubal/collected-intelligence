@@ -1,3 +1,4 @@
+/*
 $('#tlt-1').textillate({ in: { effect: 'fadeIn' }})
 .on('end.tlt', function () {
   $(this).fadeTo('slow',0);
@@ -20,6 +21,15 @@ $('#tlt-1').textillate({ in: { effect: 'fadeIn' }})
         });
       });
     });
+  });
+});
+*/
+
+$('#intro-text').remove();
+$('#intro-title').fadeIn(1000, function() {
+  $('#intro-subtitle').fadeIn(1000, function() {
+    $('.navigation').css('opacity',1);
+    $('#toggle, #toggle-bg').css('opacity',1);
   });
 });
 
