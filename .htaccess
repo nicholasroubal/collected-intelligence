@@ -1,3 +1,10 @@
+# Canonical HTTPS/non-WWW
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} ^www\.example\.com [NC]
+	RewriteRule (.*) https://example.com/$1 [L,R=301]
+</IfModule>
+
 RewriteEngine On
 RedirectMatch 301 /contact.html https://collected-intelligence.com
 RedirectMatch 301 /research.html https://collected-intelligence.com
