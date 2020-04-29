@@ -1,4 +1,4 @@
 RewriteEngine On
-RedirectMatch 301 /contact.html http://www.collected-intelligence.com
-RedirectMatch 301 /research.html http://www.collected-intelligence.com
-RedirectMatch 301 /testimonials.html http://www.collected-intelligence.com
+RedirectMatch 301 /contact.html https://collected-intelligence.com
+RedirectMatch 301 /research.html https://collected-intelligence.com
+RedirectMatch 301 /testimonials.html https://collected-intelligence.com
